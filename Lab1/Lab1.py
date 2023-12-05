@@ -34,7 +34,7 @@ def keywordCipher(text, key, decrypt=False):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     shiftedAlphabet = ''.join(
         OrderedDict.fromkeys(key.lower() + alphabet.lower()))
-
+    
     for char in text:
         charIsLower = char.islower()
         charIndex = ord(char) - 97 if charIsLower else ord(char) - 65
